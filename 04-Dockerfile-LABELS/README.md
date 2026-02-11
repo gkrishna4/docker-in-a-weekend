@@ -19,7 +19,43 @@ In this guide, you will:
 - Learn about the `docker inspect` command.
 
 ---
+**An OCI label in Docker refers to standardized metadata annotations defined by the Open Container Initiative (OCI). These are key–value labels that describe your container image in a consistent, portable, and vendor‑neutral way.**
+```What Are OCI Labels?
+OCI labels are stored in an image’s metadata under the org.opencontainers.
+They provide standard fields like:
+Who built the image
+When it was created
+Source repository
+Version
+Documentation links
+Licensing info
 
+Here you go — a **clean, copy‑friendly table** of widely used OCI labels, exactly as you requested.  
+You can copy this table directly into Markdown, documentation, or a README.
+
+***
+
+# 📋 Widely Used OCI Labels (Copy‑Friendly Table)
+
+| **OCI Label**                            | **Description**                              |
+| ---------------------------------------- | -------------------------------------------- |
+| `org.opencontainers.image.title`         | Name/title of the image or project           |
+| `org.opencontainers.image.description`   | Short description of the container image     |
+| `org.opencontainers.image.version`       | Application or image version (e.g., `1.0.0`) |
+| `org.opencontainers.image.revision`      | VCS revision/commit SHA                      |
+| `org.opencontainers.image.created`       | Image creation timestamp                     |
+| `org.opencontainers.image.source`        | Source code repository URL                   |
+| `org.opencontainers.image.url`           | Website or documentation URL                 |
+| `org.opencontainers.image.documentation` | Link to image or project documentation       |
+| `org.opencontainers.image.authors`       | Author(s) or maintainer(s)                   |
+| `org.opencontainers.image.licenses`      | License under which the image is distributed |
+| `org.opencontainers.image.vendor`        | Vendor or organization name                  |
+| `org.opencontainers.image.ref.name`      | Image reference name (repository + tag)      |
+| `org.opencontainers.image.base.name`     | Base image name used for building            |
+
+***
+
+```
 ## Step 1: Create Dockerfile and Customized `index.html`
 
 - **Base Image:** [Nginx Alpine Slim](https://hub.docker.com/_/nginx/tags?page_size=&ordering=&name=alpine-slim)
