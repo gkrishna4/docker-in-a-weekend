@@ -21,8 +21,9 @@ In this guide, you will:
 ---
 **An OCI label in Docker refers to standardized metadata annotations defined by the Open Container Initiative (OCI). These are key–value labels that describe your container image in a consistent, portable, and vendor‑neutral way.**
 ```What Are OCI Labels?
-OCI labels are stored in an image’s metadata under the org.opencontainers.
+OCI labels are stored in an image’s metadata under the org.opencontainers.image.*
 They provide standard fields like:
+
 Who built the image
 When it was created
 Source repository
@@ -30,12 +31,6 @@ Version
 Documentation links
 Licensing info
 
-Here you go — a **clean, copy‑friendly table** of widely used OCI labels, exactly as you requested.  
-You can copy this table directly into Markdown, documentation, or a README.
-
-***
-
-# 📋 Widely Used OCI Labels (Copy‑Friendly Table)
 
 | **OCI Label**                            | **Description**                              |
 | ---------------------------------------- | -------------------------------------------- |
@@ -52,8 +47,6 @@ You can copy this table directly into Markdown, documentation, or a README.
 | `org.opencontainers.image.vendor`        | Vendor or organization name                  |
 | `org.opencontainers.image.ref.name`      | Image reference name (repository + tag)      |
 | `org.opencontainers.image.base.name`     | Base image name used for building            |
-
-***
 
 ```
 ## Step 1: Create Dockerfile and Customized `index.html`
