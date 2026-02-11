@@ -30,25 +30,26 @@ Source repository
 Version
 Documentation links
 Licensing info
-
-
-| **OCI Label**                            | **Description**                              |
-| ---------------------------------------- | -------------------------------------------- |
-| `org.opencontainers.image.title`         | Name/title of the image or project           |
-| `org.opencontainers.image.description`   | Short description of the container image     |
-| `org.opencontainers.image.version`       | Application or image version (e.g., `1.0.0`) |
-| `org.opencontainers.image.revision`      | VCS revision/commit SHA                      |
-| `org.opencontainers.image.created`       | Image creation timestamp                     |
-| `org.opencontainers.image.source`        | Source code repository URL                   |
-| `org.opencontainers.image.url`           | Website or documentation URL                 |
-| `org.opencontainers.image.documentation` | Link to image or project documentation       |
-| `org.opencontainers.image.authors`       | Author(s) or maintainer(s)                   |
-| `org.opencontainers.image.licenses`      | License under which the image is distributed |
-| `org.opencontainers.image.vendor`        | Vendor or organization name                  |
-| `org.opencontainers.image.ref.name`      | Image reference name (repository + tag)      |
-| `org.opencontainers.image.base.name`     | Base image name used for building            |
-
 ```
+## 📦 Widely Used OCI Labels
+
+| **OCI Label** | **Description** |
+|---------------|------------------|
+| `org.opencontainers.image.title` | Name/title of the image or project |
+| `org.opencontainers.image.description` | Short description of the container image |
+| `org.opencontainers.image.version` | Application or image version (e.g., `1.0.0`) |
+| `org.opencontainers.image.revision` | VCS revision/commit SHA |
+| `org.opencontainers.image.created` | Image creation timestamp |
+| `org.opencontainers.image.source` | Source code repository URL |
+| `org.opencontainers.image.url` | Website or documentation URL |
+| `org.opencontainers.image.documentation` | Link to image or project documentation |
+| `org.opencontainers.image.authors` | Author(s) or maintainer(s) |
+| `org.opencontainers.image.licenses` | License under which the image is distributed |
+| `org.opencontainers.image.vendor` | Vendor or organization name |
+| `org.opencontainers.image.ref.name` | Image reference name (repository + tag) |
+| `org.opencontainers.image.base.name` | Base image name used for building |
+
+
 ## Step 1: Create Dockerfile and Customized `index.html`
 
 - **Base Image:** [Nginx Alpine Slim](https://hub.docker.com/_/nginx/tags?page_size=&ordering=&name=alpine-slim)
